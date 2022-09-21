@@ -20,6 +20,7 @@ app.get('/register', (req, res) => {
 	res.sendFile(path.resolve(__dirname,'./src/views/register.html'));
 });
 
-// app.listen(3030, () => console.log('Servidor corriendo en puerto 3030'));
+// app.listen(3030, () => console.log('Servidor corriendo en puerto 3030')); 
+// local
 
 app.listen(process.env.PORT || 3030, () => console.log('Servidor corriendo en puerto 3030'));

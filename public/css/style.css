@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #ebebeb;
+border: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+    background-color: #EAC926;
+    padding-bottom: 1rem;
+}
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Imagenes */
+
+img {
+max-width: 100%;
+height: auto;
+margin: auto;
+}
+.logo {
+max-width: 250px;
+height: auto;
+margin: 15px;
+flex: 5;
+}
+.productoImg {
+    width: 90%;
+    margin: 15px auto;
+}
+.banner-head {
+    /* margin: 2rem 0; */
+    width: 100vw;
+    width: 100%;
+}
+
+/* tipografia */
+
+p {
+font-size: 12px;
+}
+.titulos {
+font-size: 24px;
+}
+.precios {
+font-size: 18px;
+flex: 7;
+align-items: center;
+}
+.descuentos, .descripciones {
+font-size: 16;
+}
+.descuentos {
+    color: #39b54a;
+    flex: 3;
+    align-items: center;
+    display: flex;
+}
+.tituloCredito {
+text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-rigth {
+    text-align: right;
+}
+
+/* menu */
+.burger-menu {
+background-color: #03264C;
+padding: 10px;
+border-radius: 5px;
+margin: 10px auto;
+align-items: center;
+text-align: center;
+width: 20px;
+}
+.burger-menu i {
+color: white  ;
+}
+.main-nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* navegacion */
+.nav-bar {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around
+}
+header nav{
+    font-size: 12px;
+    display: none;
+    padding-bottom: 10px;
+}
+#buscar.div {
+    flex: 5;
+
+}
+.enlaces {
+display: flex;
+}
+
+/* footer */
+.footerInfo {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.contenedor {
+text-align: center;
+margin: 2rem 0;
+}
+.contenedor i {
+font-size: 2em;
+height: auto;
+color: #03264C;
+}
+
+/* columnas 
+main {
+    column-count:4;
+    column-gap: 3em;
+    column-rule: 1px solid #bbb;
+    column-width: 140px;
+    background-color: white;
+} */
+
+/* productos */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+main{
+    width: 90%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    display: block;
+    margin: 0 auto;
+}
+main article{
+    background-color: #fff;
+}
+main article i,
+.discount{
+    color: #39b54a;
+}
+article {
+    margin: 10px 0px; /* margin-bottom: 10px*/
+    transition: all 450ms;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.main-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.main-article .circulo-envio {
+    border: #39b54a solid 1px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    bottom: 22px;
+    left: 0px;
+    background-color: white;
+}
+/*
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #EBEBEB;
+    position: relative;
+    padding: 15px;
+}*/
+.precio-mas-descuento {
+    display: flex;
+    width: 80%;
+}
+
+/* querty */
+
+@media (min-width: 361px) {
+    div.main-article {
+        display: block;
+        
+    }
+    
+    .description {
+        display: block;
+        margin-top: 20px; 
+    }
+
+    .discount {
+        text-align:right;
+    }
+}
+
+@media (min-width: 361px) {
+
+    article  {
+        width: 48%;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
+
+
+    .primer-nav {
+        width: 100%;
+        padding-right: 90px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .segundo-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+@media (min-width: 576px) {
+    .description {
+        color: white;
+        transition: all 600ms;
+    
+    }
+    
+    article:hover .description{
+        
+        color: #666
+    
+        }
+}
+
+@media (min-width: 630px) {
+    .navegadores {
+        display: flex;
+    }
+}
+
+@media (min-width: 630px) {
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .products {
+    display: flex;
+    }
+    main section article {
+        width: 23%;
+    }
+    .precio-mas-descuento {
+        width: 140px;
+    }
+}

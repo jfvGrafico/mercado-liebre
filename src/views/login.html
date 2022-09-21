@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es/ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+</head>
+    <body>
+        <header>
+            <div class="top-header">
+                
+             <div class="logo-mas-buscador">
+                 <div class="logo"> 
+                     <a href="/">
+                         <img class="logo-mercadolibre" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                     </a>
+                 </div>
+        </header>
+         
+        <main class="main-login">
+            <div class="contenedor-global">
+                <div class="wrap">
+                    <div class="contenedor-central-main-login-register"></div>
+                    <div class="tarjeta-central-login">
+                        <div class="titulo-central-card">
+                           <h1>¡Hola! Ingresa tu usuario y contraseña.</h1>
+                        </div>
+    
+                        <form class="form-login" action="/" method="POST">
+                             
+                            <label class="nombre-de-usuario"  for="nombre-de-usuario">Nombre de usuario</label>
+                            <input class="input-nombre-usuario" type="text" name="nombre-de-usuario" id="nombre-de-usuario" required minlength="3">
+                            <span>*Usuario incorrecto</span>
+                             
+                            <label class="contraseña"  for="contraseña">Contraseña</label>
+                            <input class="input-contraseña" type="password" name="contraseña" id="contraseña" required minlength="5">
+                            <span>*Contraseña incorrecta</span>
+                            <button class="ingresar-boton-login" type="submit">Continuar</button>
+                            <button class="boton-crear-cuenta" type="submit">Crear cuenta</button>
+                       </form>
+                      
+                           <a href="/" class="recuperar-cuenta">Me olvide mi contraseña</a>
+                        
+                    </div>
+                </div>  
+            </div>
+        </main>
+        <footer>
+             
+          <section>
+             <p class="copyright">Copyright © 1999 MercadoLiebre S.R.L</p> 
+          </section>
+  
+       </footer>
+        
+    </body>
+</html>

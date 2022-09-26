@@ -1,97 +1,260 @@
 <!DOCTYPE html>
 <html lang="es/ES">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Liebre</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Mercado Liebre</title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-</head>
-    <body>
-        <header>
-            <div class="top-header">
-                
-             <div class="logo-mas-buscador">
-                 <div class="logo"> 
-                    <a href="/">
-                        <img class="logo-mercadolibre" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                    </a>
-                 </div>
-        </header>
-         
-        <main class="main-register">
-            <div class="contenedor-global"> 
-                <div class="wrap">
-                    <div class="contenedor-central-main-login-register"></div>
-                    <div class="tarjeta-central-register">
-                        <div class="titulo-central-card">
-                            <h1>¡Hola! Completa tus datos y registrarte!</h1> 
-                        </div>
-                        <form class="form-register" action="/" method="GET">
-                             
-                                <label class="label-nombre-apellido" for="nombre-y-apellido"></label>
-                                <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" placeholder="Nombre y Apellido" required minlength="5">
-                    
-                                <label class="label-usuario-register" for="nombre-de-usuario"> </label>
-                                <input type="text" name="nombre-de-usuario" id="nombre-de-usuario" placeholder="Nombre de Usuario" required minlength="5">
-                    
-                                <label class="label-fecha-nacimiento" for="fecha-nacimiento">Fecha de nacimiento:</label>
-                                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="1930-01-01" max="2022-02-01" placeholder="E-mail">
-                    
-                                <label class="label-domicilio" for="domicilio">Domicilio:</label>
-                                <input type="text" name="domicilio" id="domicilio" required min="5">
-                            
-            
-                                <label class="perfil-usuario">Perfil de usuario:</label>
-                            
-                                <label class="comprador"><input type="radio" name="perfil" value="comprador"> comprador</label>
-                                
-                                <label class="vendedor"><input type="radio" name="perfil" value="vendedor"> vendedor</label>
-                                
-                           
-            
-                                <label class="categoria-interes" for="categoria-interes">  Categoría de interes:</label>
-                            
-                                <label class="Electro"><input type="checkbox" name="categoria-interes" value="Electro"> Electro</label>
-                                
-                                <label class="Moda"><input type="checkbox" name="categoria-interes" value="Moda"> Moda</label>
-                                
-                                <label class="Hogar"><input type="checkbox" name="categoria-interes" value="Hogar"> Hogar</label>
-                                
-                                <label class="Juguetería"><input type="checkbox" name="categoria-interes" value="Juguetería"> Juguetería</label>
-                                
-                                <label class="Vida-sana"><input type="checkbox" name="categoria-interes" value="Vida sana"> Vida sana</label>
-                            
-            
-                            <label class="label-foto-usuario" for="foto-usuario">Foto del usuario:</label>
-                            <input type="file" name="foto-usuario" accept=".jpg, .png" multiple>
-            
-                            <label class="label-contraseña" for="contraseña">Contraseña:</label>
-                            <input type="password" name="contraseña" id="contraseña" required minlength="5">
-                            <label class="label-confirmar-pass" for="contraseña">Confirmar contraseña:</label>
-                            <input type="password" name="contraseña-confirmacion" id="contraseña-confirmacion" required minlength="3">
-            
-                            <button class="enviar-boton-register" type="submit">ENVIAR</button>
-                            <button class="reset-boton-register" type="reset">RESET</button>
-                        </form>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="logo-mas-buscador">
+          <div class="logo">
+            <a href="/">
+              <img
+                class="logo-mercadolibre"
+                src="images/logo-mercado-liebre.svg"
+                alt="Logo de MercadoLiebre"
+              />
+            </a>
+          </div>
+          <form class="form" action="/" method="GET">
+            <div class="input">
+              <input
+                type="text"
+                class="buscar-productos"
+                placeholder="Buscar productos y marcas"
+              />
+              <i class="fa fa-search submit"></i>
             </div>
-            
-        </main>
-        <footer>
-             
-          <section>
-             <p class="copyright">Copyright © 1999 MercadoLiebre S.R.L</p> 
-          </section>
-  
-       </footer>
-        
-    </body>
+          </form>
+        </div>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav class="navegadores">
+        <ul class="primer-nav">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="segundo-nav">
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+
+    <main class="main-register">
+      <div class="contenedor-global">
+        <div class="wrap">
+          <div class="contenedor-central-main-login-register"></div>
+          <div class="tarjeta-central-register">
+            <div class="titulo-central-card">
+              <h1>¡Hola! Completa tus datos y registrarte!</h1>
+            </div>
+            <form class="form-register" action="/" method="GET">
+              <label
+                class="label-nombre-apellido"
+                for="nombre-y-apellido"
+              ></label>
+              <input
+                type="text"
+                name="nombre-y-apellido"
+                id="nombre-y-apellido"
+                placeholder="Nombre y Apellido"
+                required
+                minlength="5"
+              />
+
+              <label class="label-usuario-register" for="nombre-de-usuario">
+              </label>
+              <input
+                type="text"
+                name="nombre-de-usuario"
+                id="nombre-de-usuario"
+                placeholder="Nombre de Usuario"
+                required
+                minlength="5"
+              />
+
+              <label class="label-fecha-nacimiento" for="fecha-nacimiento"
+                >Fecha de nacimiento:</label
+              >
+              <input
+                type="date"
+                name="fecha-nacimiento"
+                id="fecha-nacimiento"
+                min="1930-01-01"
+                max="2022-02-01"
+                placeholder="E-mail"
+              />
+
+              <label class="label-domicilio" for="domicilio">Domicilio:</label>
+              <input
+                type="text"
+                name="domicilio"
+                id="domicilio"
+                required
+                min="5"
+              />
+
+              <label class="perfil-usuario">Perfil de usuario:</label>
+
+              <label class="comprador"
+                ><input type="radio" name="perfil" value="comprador" />
+                comprador</label
+              >
+
+              <label class="vendedor"
+                ><input type="radio" name="perfil" value="vendedor" />
+                vendedor</label
+              >
+
+              <label class="categoria-interes" for="categoria-interes">
+                Categoría de interes:</label
+              >
+
+              <label class="Electro"
+                ><input
+                  type="checkbox"
+                  name="categoria-interes"
+                  value="Electro"
+                />
+                Electro</label
+              >
+
+              <label class="Moda"
+                ><input type="checkbox" name="categoria-interes" value="Moda" />
+                Moda</label
+              >
+
+              <label class="Hogar"
+                ><input
+                  type="checkbox"
+                  name="categoria-interes"
+                  value="Hogar"
+                />
+                Hogar</label
+              >
+
+              <label class="Juguetería"
+                ><input
+                  type="checkbox"
+                  name="categoria-interes"
+                  value="Juguetería"
+                />
+                Juguetería</label
+              >
+
+              <label class="Vida-sana"
+                ><input
+                  type="checkbox"
+                  name="categoria-interes"
+                  value="Vida sana"
+                />
+                Vida sana</label
+              >
+
+              <label class="label-foto-usuario" for="foto-usuario"
+                >Foto del usuario:</label
+              >
+              <input
+                type="file"
+                name="foto-usuario"
+                accept=".jpg, .png"
+                multiple
+              />
+
+              <label class="label-contraseña" for="contraseña"
+                >Contraseña:</label
+              >
+              <input
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                required
+                minlength="5"
+              />
+              <label class="label-confirmar-pass" for="contraseña"
+                >Confirmar contraseña:</label
+              >
+              <input
+                type="password"
+                name="contraseña-confirmacion"
+                id="contraseña-confirmacion"
+                required
+                minlength="3"
+              />
+
+              <button class="enviar-boton-register" type="submit">
+                ENVIAR
+              </button>
+              <button class="reset-boton-register" type="reset">RESET</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <div><i class="fas fa-credit-card"></i></div>
+        <h5>Paga con tarjeta o en efectivo</h5>
+        <p>
+          Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
+
+      <section>
+        <div><i class="fas fa-gift"></i></div>
+        <h5>Envío gratis desde los $2.500</h5>
+        <p>
+          Solo por estar registrado en Mercado Liebre tenes envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
+
+      <section>
+        <div><i class="fas fa-user-shield"></i></div>
+        <h5>Seguridad de principio a fin</h5>
+        <p>
+          ¿No te gusta ? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+          hacer porque estas siempre protegido.
+        </p>
+      </section>
+    </footer>
+
+    <section>
+      <p class="copyright">Copyright © 1999 MercadoLiebre S.R.L</p>
+    </section>
+  </body>
 </html>

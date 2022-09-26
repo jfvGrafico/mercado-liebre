@@ -1,65 +1,155 @@
 <!DOCTYPE html>
 <html lang="es/ES">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Liebre</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Mercado Liebre</title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-
-</head>
-    <body>
-        <header>
-            <div class="top-header">
-                
-             <div class="logo-mas-buscador">
-                 <div class="logo"> 
-                     <a href="/">
-                         <img class="logo-mercadolibre" src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                     </a>
-                 </div>
-        </header>
-         
-        <main class="main-login">
-            <div class="contenedor-global">
-                <div class="wrap">
-                    <div class="contenedor-central-main-login-register"></div>
-                    <div class="tarjeta-central-login">
-                        <div class="titulo-central-card">
-                           <h1>¡Hola! Ingresa tu usuario y contraseña.</h1>
-                        </div>
-    
-                        <form class="form-login" action="/" method="POST">
-                             
-                            <label class="nombre-de-usuario"  for="nombre-de-usuario">Nombre de usuario</label>
-                            <input class="input-nombre-usuario" type="text" name="nombre-de-usuario" id="nombre-de-usuario" required minlength="3">
-                            <span>*Usuario incorrecto</span>
-                             
-                            <label class="contraseña"  for="contraseña">Contraseña</label>
-                            <input class="input-contraseña" type="password" name="contraseña" id="contraseña" required minlength="5">
-                            <span>*Contraseña incorrecta</span>
-                            <button class="ingresar-boton-login" type="submit">Continuar</button>
-                            <button class="boton-crear-cuenta" type="submit">Crear cuenta</button>
-                       </form>
-                      
-                           <a href="/" class="recuperar-cuenta">Me olvide mi contraseña</a>
-                        
-                    </div>
-                </div>  
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="logo-mas-buscador">
+          <div class="logo">
+            <a href="/">
+              <img
+                class="logo-mercadolibre"
+                src="images/logo-mercado-liebre.svg"
+                alt="Logo de MercadoLiebre"
+              />
+            </a>
+          </div>
+          <form class="form" action="/" method="GET">
+            <div class="input">
+              <input
+                type="text"
+                class="buscar-productos"
+                placeholder="Buscar productos y marcas"
+              />
+              <i class="fa fa-search submit"></i>
             </div>
-        </main>
-        <footer>
-             
-          <section>
-             <p class="copyright">Copyright © 1999 MercadoLiebre S.R.L</p> 
-          </section>
-  
-       </footer>
-        
-    </body>
+          </form>
+        </div>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav class="navegadores">
+        <ul class="primer-nav">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="segundo-nav">
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+
+    <main class="main-login">
+      <div class="contenedor-global">
+        <div class="wrap">
+          <div class="contenedor-central-main-login-register"></div>
+          <div class="tarjeta-central-login">
+            <div class="titulo-central-card">
+              <h1>¡Hola! Ingresa tu usuario y contraseña.</h1>
+            </div>
+
+            <form class="form-login" action="/" method="GET">
+              <label class="nombre-de-usuario" for="nombre-de-usuario"
+                >Nombre de usuario</label
+              >
+              <input
+                class="input-nombre-usuario"
+                type="text"
+                name="nombre-de-usuario"
+                id="nombre-de-usuario"
+                required
+                minlength="3"
+              />
+              <span>*Usuario incorrecto</span>
+
+              <label class="contraseña" for="contraseña">Contraseña</label>
+              <input
+                class="input-contraseña"
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                required
+                minlength="5"
+              />
+              <span>*Contraseña incorrecta</span>
+              <button class="ingresar-boton-login" type="submit">
+                Continuar
+              </button>
+              <button class="boton-crear-cuenta" type="submit">
+                Crear cuenta
+              </button>
+            </form>
+
+            <a href="/" class="recuperar-cuenta">Olvidé mi contraseña</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <div><i class="fas fa-credit-card"></i></div>
+        <h5>Paga con tarjeta o en efectivo</h5>
+        <p>
+          Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
+
+      <section>
+        <div><i class="fas fa-gift"></i></div>
+        <h5>Envío gratis desde los $2.500</h5>
+        <p>
+          Solo por estar registrado en Mercado Liebre tenes envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
+
+      <section>
+        <div><i class="fas fa-user-shield"></i></div>
+        <h5>Seguridad de principio a fin</h5>
+        <p>
+          ¿No te gusta ? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+          hacer porque estas siempre protegido.
+        </p>
+      </section>
+    </footer>
+
+    <section>
+      <p class="copyright">Copyright © 1999 MercadoLiebre S.R.L</p>
+    </section>
+  </body>
 </html>
